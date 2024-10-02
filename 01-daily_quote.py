@@ -28,11 +28,10 @@ quotes = [
 ]
 
 def get_quote_of_the_day(quotes):
-    # Use today's date to set the seed for the random number generator
+   
     today = date.today()
     random.seed(today.toordinal())
     
-    # Select a random quote from the list
     todays_quote = random.choice(quotes)
     
     return todays_quote
